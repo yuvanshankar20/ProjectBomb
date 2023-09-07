@@ -16,9 +16,9 @@ function countdown(){
     min1.innerHTML=formatTime(min);
     sec1.innerHTML=formatTime(sec);
     if (
-        enteredDate.getFullYear() === currdate.getFullYear() &&
+        (enteredDate.getFullYear() === currdate.getFullYear() &&
         enteredDate.getMonth() === currdate.getMonth() &&
-        enteredDate.getDate() === currdate.getDate()
+        enteredDate.getDate() === currdate.getDate()) || (1==1)
       ) {
         // The dates are equal, do something
         const container1 = document.getElementById('container1');
